@@ -1,10 +1,18 @@
 ---
+import ChangeThemeButton from '../components/ChangeThemeButton.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Adrian Villalba">
 	<main>
-		<h1 class="text-silver-chalice-950 text-xl">hi there, it's Adrian Villalba!</h1>
-		<p class="text-silver-chalice-950">Text goes here</p>
+		<p class="text-silver-chalice-950 mb-4">Text goes here</p>
 	</main>
 </Layout>
+
+
+<style>
+	.rotate-text{
+		transform: rotate(45deg); 
+  		transition: transform 0.3s ease; 
+	}
+</style>
