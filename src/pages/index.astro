@@ -1,28 +1,29 @@
 ---
-import ChangeThemeButton from '../components/ChangeThemeButton.astro';
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Me">
-	<main>
-		<p class="text-silver-chalice-950 mb-4 text-9xl flex align-middle gap-0.5">it's me, Adrián Villalba</p>
-	</main>
+  <main>
+    <h1
+      class="dark:after:bg-silver-chalice-100 after:bg-silver-chalice-950 text-silver-chalice-950 mb-4 text-[10ch] flex align-middle gap-0.5 dark:text-silver-chalice-100"
+    >
+      it's me, Adrián Villalba
+    </h1>
+  </main>
 </Layout>
 
 <style>
-	p::after {
-		content: "";
-		width: 5px;
-		height: 9rem;
-		background: #363636;
-		display: inline-block;
-		animation: cursor-blink 1s steps(2) infinite;
-	} 
+  h1::after {
+    content: "";
+    width: 5px;
+    height: 9rem;
+    display: inline-block;
+    animation: cursor-blink 1s steps(2) infinite;
+  }
 
-	@keyframes cursor-blink {
-  		0% {
-    		opacity: 0;
-  		}
-}
-
+  @keyframes cursor-blink {
+    0% {
+      opacity: 0;
+    }
+  }
 </style>
