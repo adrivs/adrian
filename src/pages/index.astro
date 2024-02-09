@@ -3,27 +3,12 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Me">
-  <main>
-    <h1
-      class="dark:after:bg-silver-chalice-100 after:bg-silver-chalice-950 text-silver-chalice-950 mb-4 text-[10ch] flex align-middle gap-0.5 dark:text-silver-chalice-100"
-    >
-      it's me, Adrián Villalba
-    </h1>
-  </main>
+  <h1
+    class="dark:after:bg-silver-chalice-100 after:bg-silver-chalice-950 text-silver-chalice-950 mb-4 text-[7vw] gap-0.5 dark:text-silver-chalice-100"
+  >
+    it's me, Adrián Villalba
+  </h1>
+  <h2 class="text-silver-chalice-950 italic text-2xl">
+    Front-End developer, building UIs with React since 2018
+  </h2>
 </Layout>
-
-<style>
-  h1::after {
-    content: "";
-    width: 5px;
-    height: 9rem;
-    display: inline-block;
-    animation: cursor-blink 1s steps(2) infinite;
-  }
-
-  @keyframes cursor-blink {
-    0% {
-      opacity: 0;
-    }
-  }
-</style>

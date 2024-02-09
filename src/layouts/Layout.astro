@@ -21,7 +21,10 @@ const { title } = Astro.props;
     <title>{title}</title>
     <ViewTransitions />
   </head>
-  <body class="dark:bg-silver-chalice-950 h-screen">
+  <!-- <body class="dark:bg-silver-chalice-950 h-screen"> -->
+  <body
+    class="absolute inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"
+  >
     <div class="flex w-full pt-5 pr-5">
       <div class="ml-auto">
         <ChangeThemeButton />
@@ -30,7 +33,7 @@ const { title } = Astro.props;
     <main class="p-20">
       <div class="flex gap-20">
         <Menu />
-        <div class="w-full rounded-md backdrop-blur-lg">
+        <div class="w-full rounded-md">
           <slot />
         </div>
       </div>
